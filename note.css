@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.container {
+    position: relative;
+}
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('heart.svg') repeat;
+    pointer-events: none;
+    z-index: -1;
+    animation: float 5s infinite linear;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.notepad {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7ebff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #b340ff;
+    text-align: center;
+}
+
+.love-note {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #b340ff;
+    border-radius: 8px;
+    font-size: 18px;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b340ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #762aa8;
+}
